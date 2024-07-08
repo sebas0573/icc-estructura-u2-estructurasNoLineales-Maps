@@ -28,7 +28,13 @@ public class Ejercicios {
      * frecuencia.
      */
     public static boolean areAnagrams(String str1, String str2) {
-        throw new UnsupportedOperationException("Not implemented yet");
+        HashMap<String, String> mapa = new HashMap<>();
+        mapa.put(str1, str2);
+        if(str1.equals(str2) && str1.contains(str2)){
+            return true;
+        }else{
+            return false;
+        }
 
     }
 
